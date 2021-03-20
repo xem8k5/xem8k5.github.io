@@ -15,6 +15,8 @@
 13#为什么抽水机不能抽露天水？ ———— 泵抽的是露天水，抽水机抽的地下水，井水不犯河水啊  
 14#为什么有些地图我打不了？ ———— 那是你还没解锁的主线地图，赶紧去推科技啊  
 15#重构工厂不能造兵啊？ ———— 重构指的是把低一级的机甲送进它那升级，不能跳级  
-16#有没有wiki？ ———— [官方wiki](https://mindustrygame.github.io/wiki/) [我们对wiki的汉化项目（还在进行）](https://mindustrycn.github.io/mindustrywiki/)
+16#有没有wiki？ ———— [官方wiki](https://mindustrygame.github.io/wiki/) [我们对wiki的汉化项目（还在进行）](https://mindustrycn.github.io/mindustrywiki/)  
+17#好游快爆的端是盗版吗？ ———— 不是的，就是我搬运的  
+18#官网下载地址在哪里？ ———— [官网](https://anuke.itch.io/mindustry)
 
 
