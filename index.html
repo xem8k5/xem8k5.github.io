@@ -7,6 +7,7 @@
 <title>新人咨询网站</title>
 <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="0239af71-ca82-41f0-8159-f14f9edd833c";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
 <link rel="icon" href="https://mindustrygame.github.io/wiki/images/favicon.png">
+<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
 <meta name="generator" content="Jekyll v3.9.0">
 <meta property="og:title" content="欢迎来到xem8k5的研究室！">
 <meta property="og:locale" content="en_US">
@@ -69,6 +70,22 @@
     </section>
 
     
-  
+  <div class="waifu">
+        <div class="waifu-tips"></div>
+        <canvas id="live2d" width="280" height="250" class="live2d"></canvas>
+        <div class="waifu-tool">
+            <span class="fui-home"></span>
+            <span class="fui-chat"></span>
+            <span class="fui-eye"></span>
+            <span class="fui-user"></span>
+            <span class="fui-photo"></span>
+            <span class="fui-info-circle"></span>
+            <span class="fui-cross"></span>
+        </div>
+    </div>
+        
+    <script src="assets/waifu-tips.js"></script>
+    <script src="assets/live2d.js"></script>
+    <script type="text/javascript">initModel("assets/")</script>
 
 </body></html>
