@@ -1,0 +1,37 @@
+【比较【计算【13位时间戳】-【读配置C:\Users\Administrator\Desktop\General分支基础包\Config\cjqy.love\分群数据\775264261\积分数据.ini>=<【发送者QQ】>=<跌-等待时间>=<【13位时间戳】】】>=<3600>=<
+
+【比较【计算【13位时间戳】-【读配置C:\Users\Administrator\Desktop\General分支基础包\Config\cjqy.love\分群数据\775264261\积分数据.ini>=<【发送者QQ】>=<跌-等待时间>=<【13位时间戳】】】>=<7200>=<
+你已经超时了...股票作废...
+
+【写配置C:\Users\Administrator\Desktop\General分支基础包\Config\cjqy.love\分群数据\775264261\积分数据.ini>=<【发送者QQ】>=<跌-股票>=<】
+【写配置C:\Users\Administrator\Desktop\General分支基础包\Config\cjqy.love\分群数据\775264261\积分数据.ini>=<【发送者QQ】>=<跌-等待时间>=<】
+【写配置C:\Users\Administrator\Desktop\General分支基础包\Config\cjqy.love\分群数据\775264261\积分数据.ini>=<【发送者QQ】>=<跌-当前汇率>=<】
+
+>=<
+  【比较
+【计算
+【读配置C:\Users\Administrator\Desktop\General分支基础包\Config\cjqy.love\分群数据\775264261\积分数据.ini>=<【发送者QQ】>=<跌-当前汇率>=<0】-【常量股票】
+】
+>=<
+0
+>=<
+
+股票涨了！铜+【积分+【计算【读配置C:\Users\Administrator\Desktop\General分支基础包\Config\cjqy.love\分群数据\775264261\积分数据.ini>=<【发送者QQ】>=<跌-股票>=<0】+【读配置C:\Users\Administrator\Desktop\General分支基础包\Config\cjqy.love\分群数据\775264261\积分数据.ini>=<【发送者QQ】>=<跌-当前汇率>=<0】-【常量股票】x 0.7 x 【读配置C:\Users\Administrator\Desktop\General分支基础包\Config\cjqy.love\分群数据\775264261\积分数据.ini>=<【发送者QQ】>=<跌-股票>=<0】】
+
+【写配置C:\Users\Administrator\Desktop\General分支基础包\Config\cjqy.love\分群数据\775264261\积分数据.ini>=<【发送者QQ】>=<跌-股票>=<】
+【写配置C:\Users\Administrator\Desktop\General分支基础包\Config\cjqy.love\分群数据\775264261\积分数据.ini>=<【发送者QQ】>=<跌-等待时间>=<】
+【写配置C:\Users\Administrator\Desktop\General分支基础包\Config\cjqy.love\分群数据\775264261\积分数据.ini>=<【发送者QQ】>=<跌-当前汇率>=<】
+
+>=<
+
+股票跌了...铜-【积分-【计算【常量股票】- 【读配置C:\Users\Administrator\Desktop\General分支基础包\Config\cjqy.love\分群数据\775264261\积分数据.ini>=<【发送者QQ】>=<跌-当前汇率>=<0】x 0.7 x 【读配置C:\Users\Administrator\Desktop\General分支基础包\Config\cjqy.love\分群数据\775264261\积分数据.ini>=<【发送者QQ】>=<跌-股票>=<0】】】
+
+【写配置C:\Users\Administrator\Desktop\General分支基础包\Config\cjqy.love\分群数据\775264261\积分数据.ini>=<【发送者QQ】>=<跌-股票>=<】
+【写配置C:\Users\Administrator\Desktop\General分支基础包\Config\cjqy.love\分群数据\775264261\积分数据.ini>=<【发送者QQ】>=<跌-等待时间>=<】
+【写配置C:\Users\Administrator\Desktop\General分支基础包\Config\cjqy.love\分群数据\775264261\积分数据.ini>=<【发送者QQ】>=<跌-当前汇率>=<】
+】
+  】
+      】
+
+>=<时间没到！或者你还没有投资项目。。。】
+
