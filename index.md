@@ -1,5 +1,7 @@
-# 欢迎来到xem8k5的研究室！  
-## 你马上会被跳转至xem8k5的模组浏览器：
-等待五秒，你将会被重定向至模组浏览器，需要注册用户才能进入，如需要特殊权限，请联系qq2593890337
-
-<meta http-equiv="refresh" content="0; URL='http://139.198.166.63:8080'" />
+你要前往哪个界面？
+<center>
+  <input type="button" value="旧模组浏览器（维护中）" 
+οnclick="javascrtpt:window.location.href='139.198.166.63:8080/'">
+  <input type="button" value="新模组浏览器（已开放！）" 
+οnclick="javascrtpt:window.location.href='139.198.166.63:8080/'">
+</center/
