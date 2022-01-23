@@ -124,7 +124,7 @@ function gameRestart() {
     _gameScore = 0;
     _gameOver = false;
     _gameStart = false;
-    _gameTimeNum = 5;
+    _gameTimeNum = 0;
     GameTimeLayer.innerHTML = creatTimeText(_gameTimeNum);
     countBlockSize();
     refreshGameLayer(GameLayer[0]);
@@ -178,7 +178,7 @@ function gameTime() {
     _gameTimeNum++;
     _gameCps = _gameScore / _gameTimeNum; 
     _cps = _gameCps.toFixed(2)
-    if (_gameTimeNum <= 0) {
+    if (_gameTimeNum <= -50) {
         GameTimeLayer.innerHTML = '&nbsp;&nbsp;&nbsp;&nbsp;时间到！';
         gameOver();
         GameLayerBG.className += ' flash';
