@@ -185,7 +185,7 @@ function gameTime() {
 }
 
 function creatTimeText(n) {
-    return '&nbsp;TIME:'+n;
+    return '&nbsp';
 }
 var _ttreg = / t{1,2}(\d+)/,
     _clearttClsReg = / t{1,2}\d+| bad/;
