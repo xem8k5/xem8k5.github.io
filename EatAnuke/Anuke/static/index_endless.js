@@ -260,13 +260,13 @@ function gameTapEvent(e) {
         createjs.Sound.play("tap");
         tar = document.getElementById(p.id);
         tar.className = tar.className.replace(_ttreg, ' tt$1');
-        _gameTimeNum = _gameTimeNum + 0.25;
+        _gameTimeNum = _gameTimeNum + 0.2;
         _gameBBListIndex++;
         _gameScore++;
         gameLayerMoveNextRow();
     } else if (_gameStart && !tar.notEmpty) {
         createjs.Sound.play("err");
-        _gameTimeNum = _gameTimeNum - 2;
+        _gameTimeNum = _gameTimeNum * 0.5 - 2;
     }
     return false;
 }
