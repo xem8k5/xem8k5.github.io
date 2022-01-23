@@ -260,7 +260,7 @@ function gameTapEvent(e) {
         createjs.Sound.play("tap");
         tar = document.getElementById(p.id);
         tar.className = tar.className.replace(_ttreg, ' tt$1');
-        _gameTimeNum = _gameTimeNum + 0.5;
+        _gameTimeNum = _gameTimeNum + 0.35;
         _gameBBListIndex++;
         _gameScore++;
         gameLayerMoveNextRow();
