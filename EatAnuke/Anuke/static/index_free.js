@@ -100,6 +100,7 @@ var _gameBBList = [],
     _gameStart = false,
     _gameCps = 0,
     _cps = 0,
+    _highCps = 0,
     _gameTime, _gameTimeNum, _gameScore;
 
 function gameInit() {
@@ -174,10 +175,16 @@ function SubmitResults() {
     }
 }
 
-function gameTime() {
+function gameTime() {	
     _gameTimeNum++;
     _gameCps = _gameScore / _gameTimeNum; 
     _cps = _gameCps.toFixed(2)
+	
+    if(_cps >= _highCps)
+    {
+    	_highCps = _cps;
+    }
+	
     if (_gameTimeNum <= -50) {
         GameTimeLayer.innerHTML = '&nbsp;&nbsp;&nbsp;&nbsp;时间到！';
         gameOver();
@@ -189,7 +196,7 @@ function gameTime() {
 }
 
 function creatTimeText(n) {
-    return '&nbsp;CPS:'+ _cps;
+    return '&nbsp;最高CPS:'+ _highCps;
 }
 var _ttreg = / t{1,2}(\d+)/,
     _clearttClsReg = / t{1,2}\d+| bad/;
