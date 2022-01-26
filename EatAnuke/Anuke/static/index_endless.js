@@ -103,7 +103,7 @@
         _gameBBListIndex = 0,
         _gameOver = false,
         _gameStart = false,
-        _gameTime, _gameTimeNum, _gameScore, _date1, deviation_time;
+        _gameTime, _gameTimeNum, _gameScore, _date1, deviation_time , _addtime;
 
     w.gameInit = function() {
         createjs.Sound.registerSound({
@@ -128,6 +128,7 @@
         _gameOver = false;
         _gameStart = false;
         _gameTimeNum = 5;
+        _addtime = document.getElementById('addtime');
         GameTimeLayer.innerHTML = creatTimeText(_gameTimeNum);
         countBlockSize();
         refreshGameLayer(GameLayer[0]);
@@ -180,6 +181,11 @@
 
     w.gameTime = function() {
         _gameTimeNum--;
+        if (_addtime == null)
+        {
+            _addtime = 0.2;
+        }
+        
         if (_gameTimeNum <= 0) {
             GameTimeLayer.innerHTML = '&nbsp;&nbsp;&nbsp;&nbsp;时间到！';
             gameOver();
@@ -269,7 +275,7 @@
             tar.className = tar.className.replace(_ttreg, ' tt$1');
             _gameBBListIndex++;
             _gameScore++;
-            _gameTimeNum = _gameTimeNum + 0.23;
+            _gameTimeNum = _gameTimeNum + _addtime;
             gameLayerMoveNextRow();
         } else if (_gameStart && !tar.notEmpty) {
             createjs.Sound.play("err");
@@ -420,6 +426,7 @@
         cookie('message', document.getElementById("message").value, 100);
         cookie('keyboard', document.getElementById("keyboard").value, 100);
         cookie('title', document.getElementById("title").value, 100);
+        cookie('addtime', document.getElementById("addtime").value, 100);
         initSetting();
     }
 
