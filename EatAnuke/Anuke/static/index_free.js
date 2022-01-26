@@ -282,7 +282,21 @@
             gameLayerMoveNextRow();
         } else if (_gameStart && !tar.notEmpty) {
             createjs.Sound.play("err");
-            gameOver();
+		
+            let wrong = document.getElementById("wrongover").value;
+            if(wrong == "Y")
+            {
+                gameOver(); 
+            }
+            else if(document.getElementById('wrongover') == null)
+            {
+                gameOver();
+            }
+            else
+            {
+                createjs.Sound.play("tap");
+                
+            }
             tar.className += ' bad';
         }
         return false;
@@ -429,6 +443,7 @@
         cookie('message', document.getElementById("message").value, 100);
         cookie('keyboard', document.getElementById("keyboard").value, 100);
         cookie('title', document.getElementById("title").value, 100);
+	cookie('wrongover', document.getElementById("wrongover").value, 100);
         initSetting();
     }
 
