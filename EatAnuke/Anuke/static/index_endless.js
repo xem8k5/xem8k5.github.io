@@ -103,7 +103,7 @@
         _gameBBListIndex = 0,
         _gameOver = false,
         _gameStart = false,
-        _gameTime, _gameTimeNum, _gameScore, _date1, deviation_time , _addtime ;
+        _gameTime, _gameTimeNum, _gameScore, _date1, deviation_time;
 
     w.gameInit = function() {
         createjs.Sound.registerSound({
@@ -128,7 +128,6 @@
         _gameOver = false;
         _gameStart = false;
         _gameTimeNum = 5;
-        _addtime = Number(document.getElementById('addtime'));
         GameTimeLayer.innerHTML = creatTimeText(_gameTimeNum);
         countBlockSize();
         refreshGameLayer(GameLayer[0]);
@@ -181,10 +180,6 @@
 
     w.gameTime = function() {
         _gameTimeNum--;
-        if (_addtime == null)
-        {
-            _addtime = 0.2;
-        }
         
         if (_gameTimeNum <= 0) {
             GameTimeLayer.innerHTML = '&nbsp;&nbsp;&nbsp;&nbsp;时间到！';
@@ -275,7 +270,7 @@
             tar.className = tar.className.replace(_ttreg, ' tt$1');
             _gameBBListIndex++;
             _gameScore++;
-            _gameTimeNum = _gameTimeNum + _addtime;
+            _gameTimeNum = _gameTimeNum + 0.22;
             gameLayerMoveNextRow();
         } else if (_gameStart && !tar.notEmpty) {
             createjs.Sound.play("err");
