@@ -103,7 +103,7 @@
         _gameBBListIndex = 0,
         _gameOver = false,
         _gameStart = false,
-        _gameTime, _gameTimeNum, _gameScore, _date1, deviation_time , _addtime;
+        _gameTime, _gameTimeNum, _gameScore, _date1, deviation_time , _addtime ;
 
     w.gameInit = function() {
         createjs.Sound.registerSound({
@@ -128,7 +128,7 @@
         _gameOver = false;
         _gameStart = false;
         _gameTimeNum = 5;
-        _addtime = document.getElementById('addtime');
+        _addtime = Number(document.getElementById('addtime'));
         GameTimeLayer.innerHTML = creatTimeText(_gameTimeNum);
         countBlockSize();
         refreshGameLayer(GameLayer[0]);
