@@ -103,7 +103,7 @@
         _gameBBListIndex = 0,
         _gameOver = false,
         _gameStart = false,
-        _gameTime, _gameTimeNum, _gameScore, _date1, deviation_time;
+        _gameTime, _gameTimeNum, _gameScore, _date1, deviation_time , _Time;
 
     w.gameInit = function() {
         createjs.Sound.registerSound({
@@ -181,6 +181,8 @@
     w.gameTime = function() {
         _gameTimeNum--;
         
+        _Time = _gameTimeNum.toFixed(2);
+        
         if (_gameTimeNum <= 0) {
             GameTimeLayer.innerHTML = '&nbsp;&nbsp;&nbsp;&nbsp;时间到！';
             gameOver();
@@ -192,7 +194,7 @@
     }
 
     w.creatTimeText = function(n) {
-        return '&nbsp;TIME:' + n;
+        return '&nbsp;TIME:' + _Time;
     }
 
     let _ttreg = / t{1,2}(\d+)/,
