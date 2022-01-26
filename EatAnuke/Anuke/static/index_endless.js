@@ -127,7 +127,7 @@
         _gameScore = 0;
         _gameOver = false;
         _gameStart = false;
-        _gameTimeNum = 20;
+        _gameTimeNum = 5;
         GameTimeLayer.innerHTML = creatTimeText(_gameTimeNum);
         countBlockSize();
         refreshGameLayer(GameLayer[0]);
@@ -269,10 +269,11 @@
             tar.className = tar.className.replace(_ttreg, ' tt$1');
             _gameBBListIndex++;
             _gameScore++;
+            _gameTimeNum = _gameTimeNum + 0.23;
             gameLayerMoveNextRow();
         } else if (_gameStart && !tar.notEmpty) {
             createjs.Sound.play("err");
-            gameOver();
+            _gameTimeNum = _gameTimeNum * 0.5 - 1;
             tar.className += ' bad';
         }
         return false;
