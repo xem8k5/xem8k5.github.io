@@ -108,9 +108,9 @@ optionsTitle.text = '转换选项'
 // options buttons (input radio)
 const optionsRadios = new StyledElement('optionsRadios')
 
-optionsRadios.putRadio('flat tiles', 0, 'options')
-optionsRadios.putRadio('all tiles', 1, 'options')
-optionsRadios.putRadio('custom', -1, 'options')
+optionsRadios.putRadio('平地地板', 0, 'options')
+optionsRadios.putRadio('所有类型地块', 1, 'options')
+optionsRadios.putRadio('自定义', -1, 'options')
 optionsRadios.updateRadios('options')
 
 // gamma correction slider
