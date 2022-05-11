@@ -23,11 +23,11 @@ dropArea.fileDragandDropHandler('dropper', '上传或者拖入PNG或者JPG格式
 
 // load button
 const loadContent = new StyledElement('loadContent dataInteraction')
-loadContent.addLoader('loader', 'Upload', 'shadow')
+loadContent.addLoader('loader', '上传图片', 'shadow')
 
 // save button
 const saveContent = new StyledElement('saveContent dataInteraction')
-saveContent.addSaver('saver', 'Download', 'shadow')
+saveContent.addSaver('saver', '下载图片', 'shadow')
 
 // canvas
 const img = new StyledElement('img', 'img')
