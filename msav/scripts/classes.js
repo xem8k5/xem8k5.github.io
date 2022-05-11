@@ -116,7 +116,7 @@ class StyledElement {
       if (FileReader && files && files.length) {
         const fr = new FileReader()
         if(!files[0].type.match('image.png') && !files[0].type.match('image.jpeg')) {
-          alert('File type not supported')
+          alert('文件格式并不受支持')
           return
         }
         fr.onload = function () {
@@ -147,7 +147,7 @@ class StyledElement {
 
       // Not supported
       else {
-          console.error('Your browser doesn\'t support FileReader')
+          console.error('你的浏览器并不支持该网站。。。')
       }
     })
 
