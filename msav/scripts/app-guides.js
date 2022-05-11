@@ -32,9 +32,9 @@ const sideBarInfo = new StyledElement('sideBarInfo shadow')
 // footer
 const footer = new StyledElement('footer shadow')
 footer.addHtml = `<div class="center">
-  <div>Contacts</div>
-  <div>Discord:&nbspOriginal Made by&nbsp<span class="link">L' kk#6790</span></div>
-  <div>Github:&nbsp<a class="link" target="_blank" href="https://github.com/WilloIzCitron">WilloIzCitron</a>&nbsp|&nbspOriginal Made By:&nbsp<a class="link" target="_blank" href="https://github.com/Lkk9">Lkk9</a>&nbsp|&nbsp<a class="link" target="_blank" href="https://github.com/WilloIzCitron/pngToMsav">Source Code</a></div>
+  <div>原作者</div>
+  <div>Discord:&nbsp原制作于&nbsp<span class="link">L' kk#6790</span></div>
+  <div>Github:&nbsp<a class="link" target="_blank" href="https://github.com/WilloIzCitron">WilloIzCitron</a>&nbsp|&nbsp原制作于：&nbsp<a class="link" target="_blank" href="https://github.com/Lkk9">Lkk9</a>&nbsp|&nbsp<a class="link" target="_blank" href="https://github.com/WilloIzCitron/pngToMsav">Source Code</a></div>
   <div class="cop" style="user-select: none;">Copyright (c) 2022 Copyright Holder All Rights Reserved.</div>
 </div>`
 
