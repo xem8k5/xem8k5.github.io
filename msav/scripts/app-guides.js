@@ -18,7 +18,7 @@ const headContainer = new StyledElement('headContainer shadow')
 
 // logo
 const head = new StyledElement('head')
-head.addHtml = 'IMG to MSAV'
+head.addHtml = '图片转换MSAV'
 
 // ++
 headContainer.add = head
