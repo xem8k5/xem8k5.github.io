@@ -17,7 +17,7 @@ const imgSize = new StyledElement('imgSize')
 
 // drag and drop area
 const dropArea = new StyledElement('dropArea')
-dropArea.fileDragandDropHandler('dropper', 'Drag and Drop PNG and JPEG imag format here', 'dropAreaBox')
+dropArea.fileDragandDropHandler('dropper', '上传或者拖入PNG或者JPG格式图片文件', 'dropAreaBox')
 
 
 
@@ -34,7 +34,7 @@ const img = new StyledElement('img', 'img')
 
 // image size warning
 const warningSize = new StyledElement('warningSize')
-warningSize.text = 'Do not load huge pictures, it may unresponsive while converting'
+warningSize.text = '尽量别加载大型图片，否则可能会出现未知问题'
 
 // adding all stuff above (++)
 main.add = imgSize
@@ -46,7 +46,7 @@ const headContainer = new StyledElement('headContainer shadow')
 
 // logo
 const head = new StyledElement('head')
-head.addHtml = 'IMG to MSAV'
+head.addHtml = '图片转换MSAV'
 
 // ++
 headContainer.add = head
@@ -61,10 +61,10 @@ const infoConverting = new StyledElement('infoContainer') // while converting
 infoConverting.hide()
 infoConverting.addHtml = '<span style="padding: 47px 0;">Converting...</span><span style="padding: 23px 0;">Please wait as the system converts your image.</span>'
 
-infoBefore.text = 'Press the button to start converting.'
+infoBefore.text = '按下按钮开始转换'
 // convert button
 const btnConvert = new StyledElement('btn', 'button')
-btnConvert.addHtml = 'Convert'
+btnConvert.addHtml = '转换'
 btnConvert.pressed = () => {
   infoBefore.hide()
   infoConverting.show('flex')
@@ -79,10 +79,10 @@ btnConvert.pressed = () => {
 infoBefore.add = btnConvert
 
 infoAfter.hide()
-infoAfter.text = 'Conversion Done, you can save your image.'
+infoAfter.text = '转换完毕，你可以保存了'
 // reload button
 const btnReload = new StyledElement('btn', 'button')
-btnReload.addHtml = 'Revert to original'
+btnReload.addHtml = '回到初始状态'
 btnReload.pressed = () => {
   myImg = lastImg
   load = true
@@ -103,7 +103,7 @@ const options = new StyledElement('options')
 
 // title
 const optionsTitle = new StyledElement('optionsTitle')
-optionsTitle.text = 'Convert\'s options'
+optionsTitle.text = '转换选项'
 
 // options buttons (input radio)
 const optionsRadios = new StyledElement('optionsRadios')
@@ -115,7 +115,7 @@ optionsRadios.updateRadios('options')
 
 // gamma correction slider
 const gamma = new StyledElement('gamma')
-gamma.addHtml = 'Gamma: <span id="gammaValue">1</span>'
+gamma.addHtml = '亮度: <span id="gammaValue">1</span>'
 gamma.addHtml = `<input class="slider" id="sliderGamma" type="range" min="0.1" max="2" value="1" step=".02">`
 
 // ++
@@ -139,9 +139,9 @@ settings.add = optionsCustom
 // side bar
 const sideBarInfo = new StyledElement('sideBarInfo shadow')
 
-sideBarInfo.addGroup('help', 'Load your image, press convert button and wait for process. You can apply some options below.')
-sideBarInfo.addGroup('import in game', 'To make an image a mindustry map go to <div class="command">1. editor</div><div class="command">2. new map</div><div class="command">3. menu (in map editor)</div><div class="command">4. import</div><div class="command">5. import image file</div><div class="command">6. and open converted image</div>')
-sideBarInfo.addGroup('note', 'Don\'t make nsfw and furry arts.')
+sideBarInfo.addGroup('帮助', '加载您的图像，按转换按钮并等待处理完毕。您可以在下面应用一些选项')
+sideBarInfo.addGroup('导入进游戏', '要把图片制作成Mindustry地图，请访问 <div class="command">1. 编辑器</div><div class="command">2. 新地图</div><div class="command">3. 菜单 (在地图编辑器中)</div><div class="command">4. 导入</div><div class="command">5. 导入图片文件</div><div class="command">6. 然后打开转换后的图片</div>')
+sideBarInfo.addGroup('格外提醒', '别他妈转换r18g，雷人图片祸害服务器啊傻逼')
 
 // footer
 const footer = new StyledElement('footer shadow')
